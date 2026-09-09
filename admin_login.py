@@ -12,6 +12,7 @@ Env overrides:
 """
 
 import os
+import time
 import urllib.request
 import urllib.error
 import urllib.parse
@@ -61,5 +62,8 @@ def login():
 
 
 if __name__ == "__main__":
-    print(f"Admin login → {LOGIN_URL}", flush=True)
-    login()
+    print(f"Admin login → {LOGIN_URL} (every 5s)", flush=True)
+
+    while True:
+        login()
+        time.sleep(5)
