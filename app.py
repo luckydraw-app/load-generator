@@ -24,7 +24,7 @@ from datetime import datetime
 # Config
 # ──────────────────────────────────────────────
 
-PARTICIPATE_URL = os.getenv("UI_URL", "http://localhost:8080") + "/participate"
+PARTICIPATE_URL = os.getenv("UI_URL", "http://localhost:80") + "/participate"
 
 MIN_DELAY = int(os.getenv("MIN_DELAY_SECONDS", 1))
 MAX_DELAY = int(os.getenv("MAX_DELAY_SECONDS", 10))
