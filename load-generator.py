@@ -26,8 +26,8 @@ from datetime import datetime
 
 PARTICIPATE_URL = os.getenv("UI_URL", "http://localhost:8080") + "/participate"
 
-MIN_DELAY = int(os.getenv("MIN_DELAY_SECONDS", 30))
-MAX_DELAY = int(os.getenv("MAX_DELAY_SECONDS", 60))
+MIN_DELAY = int(os.getenv("MIN_DELAY_SECONDS", 1))
+MAX_DELAY = int(os.getenv("MAX_DELAY_SECONDS", 10))
 
 # ──────────────────────────────────────────────
 # Data pools
